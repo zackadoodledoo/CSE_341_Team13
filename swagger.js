@@ -10,7 +10,7 @@ const doc = {
     },
   },
   host: 'race-tracker-api.onrender.com',
-  basePath: '/api',
+  basePath: '/',
   schemes: ['https'],
   consumes: ['application/json'],
   produces: ['application/json'],
@@ -18,10 +18,7 @@ const doc = {
 
 const outputFile = './swagger.json';
 const routes = [
-  './routes/index.js',
-  './routes/races.js',
-  './routes/recipes.js',
-  './routes/workouts.js',
+  './server.js',
 ];
 
 swaggerAutogen()(outputFile, routes, doc).then(() => {
