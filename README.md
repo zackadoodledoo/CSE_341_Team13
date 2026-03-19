@@ -64,6 +64,8 @@ Zackary Sinclair
 
 Adam James Nielsen
 
+Elora Mathias
+
 ### Github Git Clone
 
 https://github.com/zackadoodledoo/CSE_341_Team13.git
