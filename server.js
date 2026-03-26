@@ -1,11 +1,4 @@
 import 'dotenv/config.js';
-app.use(cors());
-app.use(express.json());
-
-app.get('/ping', (req, res) => {
-  res.status(200).send('pong');
-});
-
 import express from "express";
 import cors from "cors";
 import session from "express-session";
@@ -71,6 +64,4 @@ if (process.env.MONGO_URI) {
   app.listen(port, () => {
     console.log(`Server running WITHOUT database on port ${port}`);
   });
-}).catch((err) => {
-  console.log(err);
-});
+}
